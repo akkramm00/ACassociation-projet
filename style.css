@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Merriweather&family=Redressed&display=swap');
+
+
+
+html,body{
+margin:0;
+width:100%;
+box-sizing:border-box;
+}
+.merriweather{
+    font-family: 'Merriweather', serif;
+}
+.allura{
+    font-family: 'Allura', cursive;
+}
+.header{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    align-content:center;
+    height:600px;
+}
+.logo{
+    border-radius:50%;
+    box-shadow:0 0 15px black;
+}
+
+.title{
+   font-size:3rem; 
+}
+.navigation{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+.navigation a{
+    padding:10px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
