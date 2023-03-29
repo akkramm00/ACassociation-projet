@@ -1,18 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Merriweather&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Merriweather&family=Redressed&family=Roboto&display=swap');;
 
-
+/*style de body & html*/
 
 html,body{
 margin:0;
 width:100%;
 box-sizing:border-box;
 }
+
+/*les fonts deu site */
 .merriweather{
     font-family: 'Merriweather', serif;
 }
+
 .allura{
     font-family: 'Allura', cursive;
 }
+
+.redressed{
+    font-family: 'Redressed', cursive;
+
+}
+
+.greatvibes{
+    font-family: 'Great Vibes', cursive;
+
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*style de header*/
 .header{
     display:flex;
     flex-direction:column;
@@ -22,49 +40,92 @@ box-sizing:border-box;
     height:600px;
     background-image:url(background.jpg);
     background-size:cover;
+    margin-bottom:20px;
+
 }
+/*style du logo de la page*/
 .logo{
     border-radius:50%;
     box-shadow:0 0 15px black;
+
 }
+
+/*style du titre de la page*/
 
 .title{
    font-size:40px;
    color:yellow;
    font-weight:bold;
+
 }
+/*style de h2*/
+h2{
+    color:rgb(2, 63, 2);
+    text-shadow:10px 10px 10px black;
+
+}
+
+/*style de h3*/
+h3{
+    color:rgb(63, 63, 233);
+    text-shadow:10px 10px 10px black;
+    text-decoration:underline ;
+
+}
+
+/*style de h4*/
+h4{
+    padding:15px; 
+    color:brown;
+    text-shadow:10px 10px 10px black; 
+  
+  }
+  
+/*style  de la barre de naviagation*/
 .navigation{
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    height:auto;
+    height:200px;
     width:100%;
     background:linear-gradient(rgba(241, 235, 235, 0.33),transparent,rgba(241, 235, 235, 0.33));
     border:1px solid white;
+
 }
+
+/* disposition des elementsde navigation*/
 .navigation a{
     padding:10px;
     text-decoration:none;
     font-weight:bold;
     color:white;
+
 }
+
+/* le suvol des liens*/
 a:hover{
     color:var(--bs-yellow);
     background:transparent;
     padding-bottom:15px;
     border-bottom:2px solid yellow;
     transition:0.5s;
+
 }
+
+/* la disposition des articles */
 .flex{
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     width:100%;
-    height:50rem;
+    height:51rem;
     margin:10px 15px;
+   
 }
+
+/*la disposition du main*/
 .content{
     
     display:flex;
@@ -72,15 +133,35 @@ a:hover{
     justify-content:center;
     align-items:center;
     width:100%;
+
+}
+.cart{
+    border:1px solid gray;
+    box-shadow:0 0 15px black;
+    border-radius:10px;
+    background:lightgrey;
+    margin-top:15px;
 }
 
+/* style des images */
 .photo{
     width:100%;
     margin:15px;
-    max-width:500px
+    max-width: 500px;
+    box-shadow:0 0 15px black;
+    border-radius:10px;
+   
     
 }
+.photo:hover{
+    transform:scale(1.05);
+    transition: 0.5s;
+}
+
+/* style du textes */
 .text{
     margin:10px 15px;
     max-width:500px;
+    color:rgb(31, 20, 20);
+
 }
