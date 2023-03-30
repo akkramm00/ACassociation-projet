@@ -120,7 +120,7 @@ a:hover{
     justify-content:center;
     align-items:center;
     width:100%;
-    height:51rem;
+    height:auto;
     margin:10px 15px;
    
 }
@@ -133,6 +133,7 @@ a:hover{
     justify-content:center;
     align-items:center;
     width:100%;
+    height:auto;
 
 }
 .cart{
