@@ -166,3 +166,60 @@ a:hover{
     color:rgb(31, 20, 20);
 
 }
+
+/* style de aside */
+.aside{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    margin:20px auto;
+}
+
+/* style des sections actu/aside */
+.actu1{
+    max-width:520px;
+    margin:10px 15px;
+    background:linear-gradient(rgb(241, 232, 94),rgb(79, 235, 79),rgb(82, 85, 230));
+    box-shadow:0 0 15px black;
+    border-radius:15px;
+    color:white;
+    padding:10px;
+}
+
+.actu2{
+    max-width:520px;
+    margin:10px 15px;
+    background:linear-gradient(rgb(224, 89, 206),rgb(79, 191, 235),rgb(1, 2, 65));
+    box-shadow:0 0 15px black;
+    border-radius:15px;
+    color:rgb(245, 236, 236);
+    padding:10px;
+}
+.actu3{
+    max-width:520px;
+    margin:10px 15px;
+    background:linear-gradient(rgb(10, 71, 2),rgb(253, 124, 3),rgb(1, 2, 65));
+    box-shadow:0 0 15px black;
+    border-radius:15px;
+    color:rgb(245, 236, 236);
+    padding:10px;
+} 
+
+/* coulr des h3/aside */
+.yellow{
+    color:yellow;
+}
+
+.IMG{
+    box-shadow:0 0 15px black;
+    border-radius:10px;
+}
+.news{
+    display:block;
+    text-align:left;
+
+
+}
