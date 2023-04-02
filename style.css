@@ -41,6 +41,7 @@ box-sizing:border-box;
     background-image:url(background.jpg);
     background-size:cover;
     margin-bottom:20px;
+    padding-top:20px;
 
 }
 /*style du logo de la page*/
@@ -124,38 +125,39 @@ h4{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    width:100%;
     height:auto;
-    margin:10px 15px;
-   
+
 }
 
 /*la disposition du main*/
 .content{
-    
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     width:100%;
     height:auto;
+    
 
 }
 .cart{
-    border:1px solid gray;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:15px 30px;
     box-shadow:0 0 15px black;
     border-radius:10px;
-    background:lightgrey;
-    margin-top:15px;
 }
 
 /* style des images */
 .photo{
     width:100%;
     margin:15px;
-    max-width: 500px;
     box-shadow:0 0 15px black;
     border-radius:10px;
+    max-width:400px;
+    min-width:300px;
    
     
 }
@@ -167,7 +169,7 @@ h4{
 /* style du textes */
 .text{
     margin:10px 15px;
-    max-width:500px;
+    max-width:700px;
     color:rgb(31, 20, 20);
 
 }
@@ -185,32 +187,37 @@ h4{
 
 /* style des sections actu/aside */
 .actu1{
-    max-width:520px;
-    margin:10px 15px;
+   
+    margin:10px 30px;
     background:linear-gradient(rgb(241, 232, 94),rgb(79, 235, 79),rgb(82, 85, 230));
     box-shadow:0 0 15px black;
     border-radius:15px;
     color:white;
     padding:10px;
+    max-width:730px;
 }
 
 .actu2{
-    max-width:520px;
-    margin:10px 15px;
+    
+    margin:10px 30px;
     background:linear-gradient(rgb(224, 89, 206),rgb(79, 191, 235),rgb(1, 2, 65));
     box-shadow:0 0 15px black;
     border-radius:15px;
     color:rgb(245, 236, 236);
     padding:10px;
+    max-width:730px;
+    
 }
 .actu3{
-    max-width:520px;
-    margin:10px 15px;
-    background:linear-gradient(rgb(10, 71, 2),rgb(253, 124, 3),rgb(1, 2, 65));
-    box-shadow:0 0 15px black;
+   
+    margin:10px 30px;
+    background:linear-gradient(rgb(10, 71, 2),rgb(253, 124, 3),rgb(173, 174, 240));
+    box-shadow:0 0 15px rgb(1, 14, 13);
     border-radius:15px;
     color:rgb(245, 236, 236);
     padding:10px;
+    max-width:730px;
+
 } 
 
 /* style du liens ass */
@@ -242,7 +249,6 @@ h4{
  }
 
 /* style footer */
-
 .height{
     height:560px;
 
@@ -299,4 +305,133 @@ h4{
     padding-bottom:15px;
     border-bottom:solid 1px rgb(13, 241, 241);
     transition:0.5s;
+}
+/* media-queries section*/
+@media screen and (min-width:880px) {
+
+    /* style header */
+    .header{
+        height:400px;
+        padding-top:70px;
+    }
+    /* display navigation */
+    .navigation{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
+        align-content:center;
+        position:fixed;
+        top:0;
+        height:60px;
+        background:linear-gradient(rgba(167, 74, 74, 0.33),transparent,rgba(214, 93, 93, 0.33));
+        border:1px solid white;
+        
+    }
+
+    /* couleur des liens de navigation */
+    .navigation a{
+        color:rgb(248, 10, 10);
+    }
+
+    /* disposition des cards */
+    .cart{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        max-width:760px;
+
+    }
+
+   /* style text/content */
+    .CARDS{
+        border:1px solid gray;
+        border-radius:10px;
+        margin:10px;
+        box-shadow:0 0 10px black;
+    }
+
+    /* style de aside */
+   .aside{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,fr);
+    grid-template-rows:40px,470px,200px;
+    grid-template-areas:
+    "TITLE TITLE "
+    "actu1 actu2"
+    "actu3 actu3"
+   }
+   .TITLE{
+    grid-area:TITLE;
+    width:100%;
+   }
+   .actu1{
+    grid-area:actu1;
+    width:90%;
+    height:100%;
+    max-width:360px
+    
+   }
+   .actu2{
+    grid-area:actu2;
+    width:100%;
+    height:100%;
+    max-width:360px;
+    
+   }
+   .actu3{
+    grid-area:actu3;
+    margin:20px auto;
+    background:linear-gradient(coral, white,yellow);
+    
+
+    
+   }
+   .width{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+
+   }
+
+ }
+@media screen and (min-width:1200px){
+    .content{
+        height:auto;
+        display:grid;
+        grid-template-columns:repeat(2,auto);
+        grid-template-rows:40px,750px,750px,750px;
+        grid-gap:15px;
+        grid-template-areas:
+        "titre2 titre2"
+        "flex1 flex2"
+        "flex3 flex4"
+        "flex5 flex6"
+     }
+     .titre2{
+        grid-area:titre2;
+     }
+     article1{
+        grid-area:flex1;
+     }
+     article2{
+        grid-area:flex2;
+     }
+     article3{
+        grid-area:flex3;
+     }
+     article4{
+        grid-area:flex4;
+     }
+     article5{
+        grid-area:flex5;
+     }
+     article6{
+        grid-area:flex6;
+     }
+
 }
