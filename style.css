@@ -357,7 +357,8 @@ h4{
     width:100%;
     display:grid;
     grid-template-columns:repeat(2,fr);
-    grid-template-rows:40px,470px,200px;
+    grid-template-rows:40px,470px,100px;
+    gap:20px;
     grid-template-areas:
     "TITLE TITLE "
     "actu1 actu2"
@@ -366,24 +367,26 @@ h4{
    .TITLE{
     grid-area:TITLE;
     width:100%;
+    
    }
    .actu1{
     grid-area:actu1;
-    width:90%;
+    width:370px;
     height:100%;
-    max-width:360px
+    margin:auto;
     
    }
    .actu2{
     grid-area:actu2;
-    width:100%;
+    width:370px;
     height:100%;
-    max-width:360px;
+    margin:auto;
     
    }
    .actu3{
+    width:840px;
     grid-area:actu3;
-    margin:20px auto;
+    margin:10px auto;
     background:linear-gradient(coral, white,yellow);
     
 
@@ -399,7 +402,9 @@ h4{
    }
 
  }
-@media screen and (min-width:1200px){
+
+ /*media queries du content*/
+@media screen and (min-width:1180px){
     .content{
         height:auto;
         display:grid;
@@ -417,21 +422,77 @@ h4{
      }
      article1{
         grid-area:flex1;
+       
      }
      article2{
         grid-area:flex2;
+      
      }
      article3{
         grid-area:flex3;
+       
      }
      article4{
         grid-area:flex4;
+        
      }
      article5{
         grid-area:flex5;
+        
      }
      article6{
         grid-area:flex6;
+        
      }
+/* disposition des cartes*/
+     .cart{
+        height:792px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        align-content:center;
+        max-width:534px;
+        min-width:534px;
+     }
+
+    /* disposition de aside */
+    .aside{
+        width:100%;
+        display:grid;
+        grid-template-columns:repeat(3,fr);
+        grid-template-rows:40px,fr;
+        grid-template-areas:
+        "TITLE TITLE TITLE"
+        "actu1 actu2 actu3"
+
+    }
+    .TITLE{
+        grid-area:TITLE;
+    }
+    .actu1{
+        grid-area:actu1;
+    }
+    .actu2{
+        grid-area:actu2;
+    }
+    .actu3{
+        grid-area:actu3;
+        width:370px;
+        height:100%;
+        
+    
+
+    }
+    .news{display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        align-content:center;
+        max-width:400px;
+    }
+
+
+   
 
 }
