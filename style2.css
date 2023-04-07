@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Merriweather&family=Redressed&family=Roboto&display=swap');;
+
+/*style de body & html*/
+
+html,body{
+margin:0;
+width:100%;
+box-sizing:border-box;
+}
+
+/*les fonts deu site */
+.merriweather{
+    font-family: 'Merriweather', serif;
+}
+
+.allura{
+    font-family: 'Allura', cursive;
+}
+
+.redressed{
+    font-family: 'Redressed', cursive;
+
+}
+
+.greatvibes{
+    font-family: 'Great Vibes', cursive;
+
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* style de la navbar */
+.H-nav{
+    height:600px;
+    display:block;
+    padding-top:120px;
+    background-image:url(background.jpg);
+    background-size:cover;
+
+}
+
+/* disposition des elementsde navigation*/
+.H-nav a{
+    padding:10px;
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
+    
+
+}
+
+/* le suvol des liens*/
+.H-nav a:hover{
+    color:var(--bs-yellow);
+    background:transparent;
+    padding-bottom:15px;
+    border-bottom:1px solid yellow;
+    transition:0.5s;
+
+}
+
+/* style des liens navbar */
+.BG-nav{
+    background:linear-gradient(rgba(241, 235, 235, 0.33),transparent,rgba(241, 235, 235, 0.33));
+    border:1px solid white;
+    height:100px;
+}
+
+/* style de H1 */
+.title{
+    font-size:60px;
+    font-weight:bold;
+    text-shadow:10px 10px 10px black;
+}
+.logo{
+    border-radius:50%;
+    box-shadow:0 0 20px rgb(238, 6, 6);
+}
+.titre2{
+    text-shadow:10px 10px 10px black;  
+}
