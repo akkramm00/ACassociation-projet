@@ -120,3 +120,9 @@ box-sizing:border-box;
     color:rgb(247, 43, 7);
     font-style:italic;
 }
+
+/* style du tableau */
+.table,
+.Bshad{
+    box-shadow:0 0 15px rgb(75, 72, 72);
+}
