@@ -126,3 +126,49 @@ box-sizing:border-box;
 .Bshad{
     box-shadow:0 0 15px rgb(75, 72, 72);
 }
+
+
+  /* style des liens contact */
+  .mail a:hover,
+  .phone a:hover{
+    text-decoration: none;
+    color:yellow;
+    transition:0.5s;
+    
+  }
+
+ /* disposition R-sociaux */
+ .R-sociaux{
+    height:100px;
+    width:300px;
+   
+ }
+
+.R-sociaux a:hover{
+    padding-bottom:15px;
+    border-bottom:1px solid yellow;
+    transition:0.5s;
+}
+
+/* style btn  "top-page" */
+.btn a{
+    text-decoration: none;
+}
+.btn a:hover{
+    color:rgb(13, 241, 241);
+    padding-bottom:15px;
+    border-bottom:solid 1px rgb(13, 241, 241);
+    transition:0.5s;
+}
+
+/* color icons */
+.white{
+    color:white;
+}
+
+/* style boutton Sign-in */
+.Sign:hover{
+    background:teal;
+    border:white solid 1px;
+    color:white;
+}
