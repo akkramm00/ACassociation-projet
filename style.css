@@ -38,7 +38,7 @@ box-sizing:border-box;
     align-items:center;
     align-content:center;
     height:600px;
-    background-image:url(background.jpg);
+    background-image:url(image.association/background.jpg);
     background-size:cover;
     margin-bottom:20px;
     padding-top:20px;
@@ -47,17 +47,20 @@ box-sizing:border-box;
 /*style du logo de la page*/
 .logo{
     border-radius:50%;
-    box-shadow:0 0 15px black;
+    box-shadow:0 0 20px rgb(248, 15, 15);
 
 }
 
 /*style du titre de la page*/
-
-.title{
-   font-size:40px;
+.title a{
+    font-size:50px;
    color:yellow;
    font-weight:bold;
-
+   text-decoration:none;
+}
+.title a:hover{
+   color:rgb(252, 252, 245);
+   text-shadow:10px 10px 10px black;
 }
 /*style de h2*/
 h2{
@@ -313,6 +316,15 @@ h4{
     .header{
         height:400px;
         padding-top:70px;
+    }
+
+    /* dispposition de T-head */
+    .T-head{
+        width:800px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
     }
     /* display navigation */
     .navigation{
