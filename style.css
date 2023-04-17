@@ -37,7 +37,7 @@ box-sizing:border-box;
     justify-content:space-around;
     align-items:center;
     align-content:center;
-    height:600px;
+    height:700px;
     background-image:url(image.association/background.jpg);
     background-size:cover;
     margin-bottom:20px;
@@ -72,6 +72,13 @@ h2{
     text-align:center;
     background:linear-gradient(gray,white,gray)
 
+}
+/* disposition du groupe TITRE */
+.GroupeTitre{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
 }
 
 /*style de h3*/
